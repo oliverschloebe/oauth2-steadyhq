@@ -106,6 +106,6 @@ class Steady extends AbstractProvider
      */
     protected function createResourceOwner(array $response, AccessToken $token)
     {
-        return new RbtvResourceOwner($response);
+        return new SteadyResourceOwner($response);
     }
 }
