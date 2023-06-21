@@ -2,7 +2,7 @@
 
 This package provides Steady OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
 
-[![CircleCI](https://circleci.com/gh/oliverschloebe/oauth2-steadyhq/tree/main.svg?style=svg)](https://circleci.com/gh/oliverschloebe/oauth2-steadyhq/tree/main) [![Build Status](https://travis-ci.com/oliverschloebe/oauth2-steadyhq.svg?branch=main)](https://travis-ci.com/oliverschloebe/oauth2-steadyhq)
+[![CircleCI](https://circleci.com/gh/oliverschloebe/oauth2-steadyhq/tree/main.svg?style=svg)](https://circleci.com/gh/oliverschloebe/oauth2-steadyhq/tree/main)
 [![StyleCI](https://github.styleci.io/repos/656813773/shield?branch=main)](https://github.styleci.io/repos/656813773)
 [![License](https://img.shields.io/packagist/l/oliverschloebe/oauth2-steadyhq.svg)](https://github.com/oliverschloebe/oauth2-steadyhq/blob/main/LICENSE)
 [![Latest Stable Version](https://img.shields.io/packagist/v/oliverschloebe/oauth2-steadyhq.svg)](https://packagist.org/packages/oliverschloebe/oauth2-steadyhq)
