@@ -43,7 +43,7 @@ class SteadyResourceOwner implements ResourceOwnerInterface
      */
     public function getName()
     {
-        return $this->getValueByKey($this->response['data'], 'first-name') . ' ' . $this->getValueByKey($this->response['data'], 'last-name');
+        return $this->getValueByKey($this->response['data'], 'first-name').' '.$this->getValueByKey($this->response['data'], 'last-name');
     }
 
     /**
