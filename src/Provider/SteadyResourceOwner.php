@@ -33,7 +33,7 @@ class SteadyResourceOwner implements ResourceOwnerInterface
      */
     public function getId()
     {
-        return $this->getValueByKey($this->response['data'], 'email');
+        return $this->getValueByKey($this->response['data'], 'id');
     }
 
     /**
@@ -43,7 +43,7 @@ class SteadyResourceOwner implements ResourceOwnerInterface
      */
     public function getName()
     {
-        return $this->getValueByKey($this->response['data'], 'first-name').' '.$this->getValueByKey($this->response['data'], 'last-name');
+        return $this->getValueByKey($this->response['data']['attributes'], 'first-name').' '.$this->getValueByKey($this->response['data']['attributes'], 'last-name');
     }
 
     /**
@@ -53,7 +53,7 @@ class SteadyResourceOwner implements ResourceOwnerInterface
      */
     public function getEmail()
     {
-        return $this->getValueByKey($this->response['data'], 'email');
+        return $this->getValueByKey($this->response['data']['attributes'], 'email');
     }
 
     /**
@@ -63,7 +63,7 @@ class SteadyResourceOwner implements ResourceOwnerInterface
      */
     public function getAttribute($key)
     {
-        return $this->getValueByKey($this->response['data'], (string) $key);
+        return $this->getValueByKey($this->response['data']['attributes'], (string) $key);
     }
 
     /**
