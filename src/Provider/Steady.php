@@ -15,7 +15,7 @@ class Steady extends AbstractProvider
     /**
      * @var string Key used in the access token response to identify the resource owner.
      */
-    const ACCESS_TOKEN_RESOURCE_OWNER_ID = 'email';
+    const ACCESS_TOKEN_RESOURCE_OWNER_ID = 'id';
 
     /**
      * Get authorization url to begin OAuth flow.
