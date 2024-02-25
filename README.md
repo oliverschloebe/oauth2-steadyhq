@@ -140,6 +140,18 @@ var_dump($mySubscriptions);
 Send a non-authenticated API request to public endpoints of the Steady API; it returns an object conforming to `Psr\Http\Message\RequestInterface`.
 
 ```php
+$httpClient = new \GuzzleHttp\Client([
+	'headers' => [
+		'X-Api-Key' => '<Your REST API Key>',
+	],
+]);
+
+$steadyProvider = new Steady([
+	// Your client options here (clientId, clientSecret etc)
+], [
+	'httpClient' => $httpClient
+]);
+
 $subscriptionsParams = [ 'filter[subscriber][email]' => 'alice@example.com' ];
 $subscriptionsRequest = $steadyProvider->getRequest(
 	'GET',
